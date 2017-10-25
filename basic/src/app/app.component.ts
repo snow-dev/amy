@@ -9,7 +9,7 @@ import { LoginPage } from '../pages/login/login';
     templateUrl: 'app.html'
 })
 export class MyApp {
-    rootPage:any = HomePage;
+    rootPage:any = LoginPage;
 
     mainMenu: Array<{title: string, component: any, icon: string}>;
     theme: string = 'default';
