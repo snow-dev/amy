@@ -1,0 +1,68 @@
+// http://ionicframework.com/docs/theming/
+
+
+// App Global Sass
+// --------------------------------------------------
+// Put style rules here that you want to apply globally. These
+// styles are for the entire app and not just one component.
+// Additionally, this file can be also used as an entry point
+// to import other Sass files to be included in the output CSS.
+//
+// Shared Sass variables, which can be used to adjust Ionic's
+// default Sass variables, belong in "theme/variables.scss".
+//
+// To declare rules for a specific mode, create a child rule
+// for the .md, .ios, or .wp mode classes. The mode class is
+// automatically applied to the <body> element in the app.
+
+
+::-webkit-scrollbar,
+*::-webkit-scrollbar {
+  display: none;
+}
+
+.default {
+  .toolbar-background-md {
+    border-color: #b2b2b2;
+    background-color: color($colors, secondary);
+  }
+
+  .card-header-md {
+    font-size: 1.6rem;
+    color: #222;
+    padding: 0;
+    height: 100px;
+  }
+
+  .item-md.item-block .item-inner {
+    padding-right: 8px;
+    border-bottom: none;
+  }
+
+  .content-md {
+    color: #000;
+    background-color: color($colors, background-menu);
+  }
+
+  ion-icon {
+    display: inline-block;
+    font-size: 1em;
+    padding-right: 7px;
+  }
+
+  .list-md[no-lines] .item-block, .list-md[no-lines] ion-item-options, .list-md[no-lines] .item .item-inner {
+    border-width: 0;
+    background: transparent;
+  }
+
+  .menu-inner > ion-header, .menu-inner > ion-content, .menu-inner > ion-footer {
+    position: absolute;
+    background-color: color($colors, background-menu);
+  }
+
+  .item-md {
+    color: #000;
+    background-color: color($colors, background-user);
+    height: 100%;
+  }
+}

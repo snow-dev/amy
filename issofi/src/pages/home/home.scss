@@ -1,0 +1,12 @@
+
+page-home {
+  .toolbar-background-md {
+    background-color: color($colors, secondary);
+  }
+
+  ::-webkit-scrollbar,
+  *::-webkit-scrollbar {
+    display: none;
+  }
+
+}

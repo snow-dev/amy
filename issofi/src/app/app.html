@@ -1,0 +1,30 @@
+
+
+<ion-menu [content]="content" side="left" id="mainMenu" class={{this.theme}}>
+    <ion-header>
+
+        <ion-toolbar>
+            <ion-title>
+                Opciones
+            </ion-title>
+        </ion-toolbar>
+
+        <ion-card-header class="user-card">
+            <ion-item>
+                <ion-label>User Profile</ion-label>
+            </ion-item>
+        </ion-card-header>
+
+    </ion-header>
+
+    <ion-content verflow-scroll="false" class={{theme}}>
+        <ion-list no-lines>
+            <button menuClose ion-item *ngFor="let item of mainMenu" (click)="changePage(item)" class="button-menu">
+                <ion-icon name={{item.icon}}></ion-icon>
+                  {{item.title}}
+            </button>
+        </ion-list>
+    </ion-content>
+</ion-menu>
+
+<ion-nav [root]="rootPage" #content swipeEnabled="true" ></ion-nav>

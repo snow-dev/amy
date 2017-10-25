@@ -1,0 +1,44 @@
+<ion-content overflow-scroll="false">
+
+    <ion-grid >
+        <ion-row>
+            <ion-col>
+                <img  src="../www/images/logotype.png"/>
+            </ion-col>
+            <ion-col offset-3>
+                <ion-list>
+                    <ion-item>
+                        <ion-label> Seleccionaa:</ion-label>
+                        <ion-select [(ngModel)]="servicio">
+                            <ion-option value="SJR">SJR</ion-option>
+                            <ion-option value="Qro">Qro</ion-option>
+                        </ion-select>
+                    </ion-item>
+                </ion-list>
+            </ion-col>
+        </ion-row>
+
+        <form [formGroup]="loginForm" (ngSubmit)="login(loginForm.value)">
+            <ion-item>
+                <ion-label stacked>Username: </ion-label>
+                <ion-input formControlName="username" type="text" value="" > </ion-input>
+            </ion-item>
+
+            <ion-item>
+                <ion-label stacked>Password: </ion-label>
+                <ion-input formControlName="password" type="password" value="" > </ion-input>
+            </ion-item>
+        </form>
+
+    </ion-grid>
+
+    <ion-item no-lines>
+        <button ion-button type="submit" (click)="login()" color="secondary" block [disabled]="loginForm.invalid">Iniciar sesión</button>
+    </ion-item>
+
+    <ion-item no-lines>
+        <button ion-button type="submit" (click)="login()" color="secondary" block [disabled]="loginForm.invalid">Restaurar  información</button>
+    </ion-item>
+
+</ion-content>
+x

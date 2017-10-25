@@ -1,0 +1,33 @@
+page-login {
+  background-color: #cccccc;
+
+  .row{
+    padding-bottom: 10%
+  }
+
+
+  ::-webkit-scrollbar,
+  *::-webkit-scrollbar {
+    display: none;
+  }
+
+
+  .scroll-content {
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    position: absolute;
+    z-index: 1;
+    display: block;
+    overflow-x: unset;
+    overflow-y: unset;
+    -webkit-overflow-scrolling: touch;
+    will-change: scroll-position;
+    contain: size style layout;
+  }
+
+
+}
+
+
